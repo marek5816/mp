@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\EgyptMonsters\Scripts\DealDamageComponent.cs" />
     <Compile Include="Assets\Scritps\Hands.cs" />
+    <Compile Include="Assets\Marek\EagelSpawner.cs" />
     <Compile Include="Assets\Scritps\HandsController.cs" />
     <Compile Include="Assets\EgyptMonsters\Scripts\DestroyMe.cs" />
     <Compile Include="Assets\EgyptMonsters\Scripts\DemoController.cs" />
