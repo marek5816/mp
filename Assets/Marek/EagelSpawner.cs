@@ -26,8 +26,10 @@ public class Eagelspawn : MonoBehaviour
         {
             // Call your spawn method here
             // Example: Spawning a normal eagle at a random position
-            Vector3 randomPosition = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
-            SpawnEagle(randomPosition, "normal"); // Change "normal" to "elite" for elite eagles
+            // Vector3 randomPosition = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
+            Vector3 randomOffset = new Vector3(Random.Range(-1, 1), Random.Range(0, 3), Random.Range(-3, 3));
+            Vector3 spawnPosition = transform.position + randomOffset;
+            SpawnEagle(spawnPosition, "normal"); // Change "normal" to "elite" for elite eagles
             
             // Wait for 2 seconds before spawning the next eagle
             yield return new WaitForSeconds(2f);
@@ -40,7 +42,7 @@ public class Eagelspawn : MonoBehaviour
 
         if (eaglePrefab != null)
         {
-            Instantiate(eaglePrefab, position, Quaternion.identity);
+            Instantiate(eaglePrefab, position, Quaternion.Euler(0, -90, 0));
         }
         else
         {

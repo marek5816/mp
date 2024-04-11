@@ -5002,7 +5002,7 @@ Transform:
   m_GameObject: {fileID: 608498663}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 4.62, z: 1.22}
+  m_LocalPosition: {x: 16, y: 6.74, z: 1.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5020,8 +5020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c527a305be2bc4483baefdec82e5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eagleNormalPrefab: {fileID: 1879581886640764, guid: 8a98dc7c3255b1f43b1885fecabf80f2, type: 3}
-  eagleElitePrefab: {fileID: 1537502993957880, guid: 30bdbf2b9c0bd8446af70e5b67b0dfc8, type: 3}
+  eagleNormalPrefab: {fileID: 1879581886640764, guid: a68a03310a78b2f43b20da336c32b38b, type: 3}
+  eagleElitePrefab: {fileID: 1537502993957880, guid: 0ac5d67d374c366498c46eb8037c4eca, type: 3}
 --- !u!1001 &615833139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7760,6 +7760,7 @@ GameObject:
   - component: {fileID: 997662491}
   - component: {fileID: 997662490}
   - component: {fileID: 997662489}
+  - component: {fileID: 997662492}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7789,7 +7790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997662487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
   m_Name: 
@@ -7950,6 +7951,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &997662492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997662487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6984411bb24b6479ab8bc31bf5869e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  sensitivity: 2
 --- !u!4 &999086935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2782439222529678998, guid: 3fa00dcc0e0e277429b3f8dedaec5507, type: 3}
@@ -14154,7 +14169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6835935351536815891, guid: b3205841b2c54e84e941859841c61959, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.904618
+      value: 6.83
       objectReference: {fileID: 0}
     - target: {fileID: 6835935351536815891, guid: b3205841b2c54e84e941859841c61959, type: 3}
       propertyPath: m_LocalPosition.y
